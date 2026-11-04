@@ -1,0 +1,16 @@
+# secrets
+.env
+kaggle.json
+
+# local environments / build artefacts
+.venv/
+build/
+runs/
+__pycache__/
+*.pyc
+.DS_Store
+dashboard/data/*.tmp
+
+# raw dataset (1,260 PNGs, 49 MB); it is also hosted as a private Kaggle dataset
+data/TXL-PBC/images/
+data/TXL-PBC/labels/

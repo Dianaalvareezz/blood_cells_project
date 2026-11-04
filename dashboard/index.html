@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blood Cell Detector</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #18202b; --muted: #5d6b7c; --line: #e3e7ec;
+    --accent: #2f5bd3; --ok: #15803d; --warn: #b45309; --err: #b91c1c;
+    --wbc: #7c3aed; --rbc: #dc2626; --plt: #0891b2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f141a; --card: #171e26; --ink: #e6ebf1; --muted: #93a1b2; --line: #26303b;
+      --accent: #7aa2ff; --ok: #4ade80; --warn: #fbbf24; --err: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 20px 16px 0; max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .sub a { color: var(--accent); }
+  nav { display: flex; gap: 4px; margin-top: 16px; border-bottom: 1px solid var(--line); }
+  nav button { background: none; border: 0; padding: 10px 14px; color: var(--muted); font: inherit;
+               cursor: pointer; border-bottom: 2px solid transparent; }
+  nav button.on { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+  main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  section { display: none; } section.on { display: block; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .grid2 { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); }
+  @media (max-width: 420px) { .grid2 { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; min-width: 0; }
+  .card h3 { margin: 0 0 8px; font-size: 14px; color: var(--muted); font-weight: 600; }
+  .kpi .v { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .kpi .l { color: var(--muted); font-size: 12px; }
+  .pill { display: inline-block; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600;
+          border: 1px solid currentColor; }
+  .RUNNING, .QUEUED { color: var(--warn); } .COMPLETE { color: var(--ok); }
+  .ERROR, .CANCELACKNOWLEDGED { color: var(--err); } .UNKNOWN { color: var(--muted); }
+  .bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; margin-top: 8px; }
+  .bar > div { height: 100%; background: var(--accent); width: 0; transition: width .4s; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 14px; }
+  th, td { padding: 6px 8px; text-align: right; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+  .tw { overflow-x: auto; }
+  img { max-width: 100%; border-radius: 6px; display: block; background: #fff; }
+  .gallery { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .note { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .chart { position: relative; height: 260px; }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+  .mt { margin-top: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Blood cell detection · YOLO26</h1>
+  <div class="sub">Kernel <a id="klink" href="#" target="_blank" rel="noopener">…</a>
+    · <span id="status" class="pill UNKNOWN">loading</span>
+    · updated <span id="updated">–</span> · page refreshes every 30 s</div>
+  <nav>
+    <button data-t="training" class="on">Training</button>
+    <button data-t="model">Model performance</button>
+    <button data-t="dataset">Dataset</button>
+  </nav>
+</header>
+<main>
+  <section id="training" class="on">
+    <div class="grid">
+      <div class="card kpi"><div class="l">Epoch</div><div class="v" id="k-epoch">–</div>
+        <div class="bar"><div id="k-bar"></div></div></div>
+      <div class="card kpi"><div class="l">Val mAP50-95 (latest / best)</div><div class="v" id="k-map">–</div></div>
+      <div class="card kpi"><div class="l">Val mAP50 (latest)</div><div class="v" id="k-map50">–</div></div>
+      <div class="card kpi"><div class="l">Elapsed · ETA</div><div class="v" id="k-time">–</div></div>
+    </div>
+    <p class="note" id="t-note"></p>
+    <div class="grid2 mt">
+      <div class="card"><h3>Validation metrics</h3><div class="chart"><canvas id="c-metrics"></canvas></div></div>
+      <div class="card"><h3>Losses (solid = train, dashed = val)</h3><div class="chart"><canvas id="c-loss"></canvas></div></div>
+    </div>
+    <div class="card mt" id="t-imgs" hidden><h3>Ultralytics training plots</h3>
+      <div class="gallery" id="t-gallery"></div></div>
+  </section>
+
+  <section id="model">
+    <p class="note" id="m-note">Model results appear here when training finishes.</p>
+    <div id="m-body" hidden>
+      <div class="grid">
+        <div class="card kpi"><div class="l">Test mAP50-95</div><div class="v" id="m-map"></div></div>
+        <div class="card kpi"><div class="l">Test mAP50</div><div class="v" id="m-map50"></div></div>
+        <div class="card kpi"><div class="l">Test precision</div><div class="v" id="m-p"></div></div>
+        <div class="card kpi"><div class="l">Test recall</div><div class="v" id="m-r"></div></div>
+      </div>
+      <div class="grid2 mt">
+        <div class="card"><h3>Per class · test split</h3><div class="tw"><table id="m-test"></table></div></div>
+        <div class="card"><h3>Per class · validation split</h3><div class="tw"><table id="m-val"></table></div></div>
+      </div>
+      <div class="card mt"><h3>Test-split evaluation plots</h3><div class="gallery" id="m-plots"></div></div>
+      <div class="card mt"><h3>Predictions on test images (conf ≥ 0.25)</h3><div class="gallery" id="m-preds"></div></div>
+    </div>
+  </section>
+
+  <section id="dataset">
+    <div class="grid" id="d-kpis"></div>
+    <div class="card mt"><h3>Splits</h3><div class="tw"><table id="d-table"></table></div>
+      <p class="note">RBCs make up about 90% of all annotations, so the classes are heavily imbalanced. Expect platelets to be the hardest class.</p></div>
+    <div class="grid2 mt">
+      <div class="card"><h3>Class distribution</h3><img src="../reports/dataset/class_distribution.png" alt="Bar chart of annotated cells per class and split"></div>
+      <div class="card"><h3>Cells per image</h3><img src="../reports/dataset/boxes_per_image.png" alt="Histogram of cells per image"></div>
+      <div class="card"><h3>Box sizes by class</h3><img src="../reports/dataset/box_sizes.png" alt="Scatter of box width vs height per class"></div>
+      <div class="card"><h3>Box centres</h3><img src="../reports/dataset/box_centres.png" alt="Heatmap of box centre positions"></div>
+    </div>
+    <div class="card mt"><h3>Training samples with ground truth</h3><img src="../reports/dataset/samples.png" alt="Grid of training images with boxes"></div>
+  </section>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const CLASSES = ["WBC", "RBC", "Platelets"];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const charts = {};
+const f3 = v => v == null || isNaN(v) ? "–" : (+v).toFixed(3);
+
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button, section").forEach(e => e.classList.remove("on"));
+  b.classList.add("on"); $(b.dataset.t).classList.add("on");
+  try { localStorage.setItem("tab", b.dataset.t); } catch (e) {}
+});
+{ let t = location.hash.slice(1); try { t = t || localStorage.getItem("tab"); } catch (e) {}
+  if (t) document.querySelector(`nav button[data-t="${t}"]`)?.click(); }
+
+async function getJSON(u) { try { const r = await fetch(u + "?t=" + Date.now()); return r.ok ? r.json() : null; } catch (e) { return null; } }
+async function getText(u) { try { const r = await fetch(u + "?t=" + Date.now()); return r.ok ? r.text() : null; } catch (e) { return null; } }
+
+function parseCSV(t) {
+  const [h, ...rows] = t.trim().split("\n");
+  const keys = h.split(",").map(s => s.trim());
+  return rows.map(r => Object.fromEntries(r.split(",").map((v, i) => [keys[i].replace("(B)", ""), +v])));
+}
+
+function fmtDur(s) { if (s == null) return "–"; s = Math.round(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60);
+  return h ? `${h}h ${m}m` : `${m}m ${s % 60}s`; }
+
+function lineChart(id, datasets, yMax) {
+  const grid = css("--line"), ink = css("--muted");
+  const cfg = { type: "line", data: { datasets },
+    options: { animation: false, maintainAspectRatio: false, parsing: false, interaction: { mode: "index", intersect: false },
+      scales: { x: { type: "linear", title: { display: true, text: "epoch", color: ink }, grid: { color: grid }, ticks: { color: ink } },
+                y: { min: 0, max: yMax, grid: { color: grid }, ticks: { color: ink } } },
+      plugins: { legend: { labels: { color: ink, boxWidth: 12 } } }, elements: { point: { radius: 0 } } } };
+  if (charts[id]) { charts[id].data.datasets = datasets; charts[id].update(); }
+  else charts[id] = new Chart($(id), cfg);
+}
+
+function renderTraining(live, rows) {
+  const ep = rows.length ? rows : (live?.epochs || []);
+  const last = ep[ep.length - 1];
+  const total = last?.epochs || live?.start?.cfg?.epochs || 100;
+  if (last) {
+    $("k-epoch").textContent = `${last.epoch} / ${total}`;
+    $("k-bar").style.width = Math.min(100, 100 * last.epoch / total) + "%";
+    const best = Math.max(...ep.map(e => e["metrics/mAP50-95"] || 0));
+    $("k-map").textContent = `${f3(last["metrics/mAP50-95"])} / ${f3(best)}`;
+    $("k-map50").textContent = f3(last["metrics/mAP50"]);
+    const el = last.elapsed_s, eta = el && last.epoch < total ? el / last.epoch * (total - last.epoch) : null;
+    $("k-time").textContent = el ? `${fmtDur(el)} · ${eta ? fmtDur(eta) : "done"}` : (rows.length ? "done" : "–");
+  } else if (live?.status === "RUNNING" && live.first_seen_running) {
+    $("k-time").textContent = fmtDur((Date.now() - Date.parse(live.first_seen_running)) / 1000) + " · –";
+  }
+  let note = "";
+  if (live?.status === "RUNNING" && !ep.length)
+    note = "The kernel is running on Kaggle. Per-epoch curves show here once Kaggle exposes the log, or when the run finishes. Kaggle often publishes the log only at the end.";
+  if (live?.status === "ERROR") note = "The Kaggle kernel failed. Open the kernel link above to see the error.";
+  $("t-note").textContent = note;
+
+  const pts = k => ep.filter(e => e[k] != null).map(e => ({ x: e.epoch, y: e[k] }));
+  lineChart("c-metrics", [
+    { label: "mAP50-95", data: pts("metrics/mAP50-95"), borderColor: css("--accent"), borderWidth: 2 },
+    { label: "mAP50", data: pts("metrics/mAP50"), borderColor: "#16a34a", borderWidth: 2 },
+    { label: "precision", data: pts("metrics/precision"), borderColor: "#d97706", borderWidth: 1.5 },
+    { label: "recall", data: pts("metrics/recall"), borderColor: "#db2777", borderWidth: 1.5 },
+  ], 1);
+  const L = [["box_loss", "#2f5bd3"], ["cls_loss", "#d97706"], ["dfl_loss", "#16a34a"]];
+  lineChart("c-loss", L.flatMap(([k, c]) => [
+    { label: "train " + k, data: pts("train/" + k), borderColor: c, borderWidth: 2 },
+    { label: "val " + k, data: pts("val/" + k), borderColor: c, borderWidth: 2, borderDash: [5, 4] },
+  ]));
+}
+
+function perClassTable(el, r) {
+  const rows = CLASSES.map((c, i) => { const m = r.per_class[c];
+    return `<tr><td><span class="sw" style="background:${css(["--wbc", "--rbc", "--plt"][i])}"></span>${c}</td><td>${f3(m.precision)}</td><td>${f3(m.recall)}</td><td>${f3(m.mAP50)}</td><td>${f3(m["mAP50-95"])}</td></tr>`; });
+  $(el).innerHTML = `<tr><th>Class</th><th>P</th><th>R</th><th>mAP50</th><th>mAP50-95</th></tr>${rows.join("")}
+    <tr><th>All</th><th>${f3(r.precision)}</th><th>${f3(r.recall)}</th><th>${f3(r.mAP50)}</th><th>${f3(r["mAP50-95"])}</th></tr>`;
+}
+
+const gallery = (el, base, files) => $(el).innerHTML = files.map(f =>
+  `<a href="${base}${f}" target="_blank"><img loading="lazy" src="${base}${f}" alt="${f}"></a>`).join("");
+
+async function renderModel() {
+  const fm = await getJSON("../reports/model/final_metrics.json");
+  if (!fm) return;
+  $("m-note").hidden = true; $("m-body").hidden = false;
+  const t = fm.test;
+  $("m-map").textContent = f3(t["mAP50-95"]); $("m-map50").textContent = f3(t.mAP50);
+  $("m-p").textContent = f3(t.precision); $("m-r").textContent = f3(t.recall);
+  perClassTable("m-test", fm.test); perClassTable("m-val", fm.val);
+  const man = await getJSON("../reports/model/manifest.json") || {};
+  const pref = ["confusion_matrix_normalized.png", "confusion_matrix.png", "BoxPR_curve.png", "BoxF1_curve.png", "BoxP_curve.png", "BoxR_curve.png"];
+  gallery("m-plots", "../reports/model/test/", pref.filter(f => (man.test || []).includes(f)));
+  gallery("m-preds", "../reports/model/predictions/", man.predictions || []);
+  const tg = ["results.png", "labels.jpg", "train_batch0.jpg"];
+  $("t-imgs").hidden = false; gallery("t-gallery", "../reports/training/", tg);
+}
+
+async function renderDataset() {
+  const d = await getJSON("../reports/dataset/summary.json");
+  if (!d) return;
+  const pc = c => Object.values(d.splits).reduce((a, s) => a + s.per_class[c], 0);
+  $("d-kpis").innerHTML = [["Images", d.total_images], ["Annotated cells", d.total_boxes.toLocaleString()],
+    ...CLASSES.map(c => [c, `${pc(c).toLocaleString()} <span class="l">(${(100 * pc(c) / d.total_boxes).toFixed(1)}%)</span>`])]
+    .map(([l, v]) => `<div class="card kpi"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("");
+  $("d-table").innerHTML = `<tr><th>Split</th><th>Images</th>${CLASSES.map(c => `<th>${c}</th>`).join("")}<th>Total cells</th><th>Cells/img (median)</th></tr>` +
+    Object.entries(d.splits).map(([s, v]) => `<tr><td>${s}</td><td>${v.images}</td>${CLASSES.map(c => `<td>${v.per_class[c]}</td>`).join("")}<td>${v.boxes}</td><td>${d.boxes_per_image[s].median}</td></tr>`).join("");
+}
+
+async function refresh() {
+  const live = await getJSON("data/live.json");
+  if (live) {
+    $("klink").textContent = live.kernel; $("klink").href = live.kernel_url;
+    $("status").textContent = live.status.toLowerCase(); $("status").className = "pill " + live.status;
+    $("updated").textContent = new Date(live.updated_at).toLocaleTimeString();
+  }
+  const csv = await getText("../reports/training/results.csv");
+  renderTraining(live, csv ? parseCSV(csv) : []);
+  await renderModel();
+}
+
+renderDataset();
+refresh();
+setInterval(refresh, 30000);
+</script>
+</body>
+</html>

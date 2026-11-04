@@ -1,0 +1,98 @@
+{
+  "dataset": "TXL-PBC",
+  "classes": [
+    "WBC",
+    "RBC",
+    "Platelets"
+  ],
+  "splits": {
+    "train": {
+      "images": 882,
+      "boxes": 12510,
+      "per_class": {
+        "WBC": 908,
+        "RBC": 11220,
+        "Platelets": 382
+      },
+      "images_without_boxes": 0,
+      "missing_label_files": 0
+    },
+    "val": {
+      "images": 252,
+      "boxes": 3752,
+      "per_class": {
+        "WBC": 257,
+        "RBC": 3383,
+        "Platelets": 112
+      },
+      "images_without_boxes": 0,
+      "missing_label_files": 0
+    },
+    "test": {
+      "images": 126,
+      "boxes": 1881,
+      "per_class": {
+        "WBC": 133,
+        "RBC": 1699,
+        "Platelets": 49
+      },
+      "images_without_boxes": 0,
+      "missing_label_files": 0
+    }
+  },
+  "total_images": 1260,
+  "total_boxes": 18143,
+  "image_sizes_top": [
+    {
+      "w": 575,
+      "h": 575,
+      "count": 500
+    },
+    {
+      "w": 360,
+      "h": 363,
+      "count": 486
+    },
+    {
+      "w": 640,
+      "h": 480,
+      "count": 160
+    },
+    {
+      "w": 256,
+      "h": 256,
+      "count": 100
+    },
+    {
+      "w": 366,
+      "h": 369,
+      "count": 14
+    }
+  ],
+  "distinct_image_sizes": 5,
+  "color_modes": {
+    "RGB": 1160,
+    "RGBA": 100
+  },
+  "invalid_annotations": 0,
+  "boxes_per_image": {
+    "train": {
+      "min": 4,
+      "median": 14,
+      "mean": 14.18,
+      "max": 32
+    },
+    "val": {
+      "min": 5,
+      "median": 14,
+      "mean": 14.89,
+      "max": 31
+    },
+    "test": {
+      "min": 5,
+      "median": 14,
+      "mean": 14.93,
+      "max": 28
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[{"stream_name":"stdout","time":1.074601941,"data":"[nvidia_smi] {\"ok\": true, \"result\": \"Tesla T4, 15360 MiB, 580.178.04\\nTesla T4, 15360 MiB, 580.178.04\"}\n"}
+,{"stream_name":"stdout","time":11.276825842,"data":"[torch_cuda] {\"ok\": true, \"result\": {\"torch\": \"2.11.0+cu130\", \"cuda\": \"13.0\", \"devices\": [\"Tesla T4\", \"Tesla T4\"], \"matmul_10x_4096_s\": 0.48, \"finite\": true}}\n"}
+,{"stream_name":"stdout","time":16.709087206,"data":"Creating new Ultralytics Settings v0.0.8 file ✅ \n"}
+,{"stream_name":"stdout","time":16.709117973,"data":"View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'\n"}
+,{"stream_name":"stdout","time":16.709122138,"data":"Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings\n"}
+,{"stream_name":"stdout","time":17.719421232,"data":"\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'yolo26n.pt': 13% ━╸────────── 744.0KB/5.3MB 7.2MB/s 0.1s\u003c0.6s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'yolo26n.pt': 35% ━━━━──────── 1.9/5.3MB 11.4MB/s 0.2s\u003c0.3s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'yolo26n.pt': 70% ━━━━━━━━──── 3.7/5.3MB 18.2MB/s 0.3s\u003c0.1s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'yolo26n.pt': 100% ━━━━━━━━━━━━ 5.3MB 14.5MB/s 0.4s\n"}
+,{"stream_name":"stdout","time":18.606331145,"data":"\r\u001b[KDownloading https://ultralytics.com/images/bus.jpg to 'bus.jpg': 100% ━━━━━━━━━━━━ 134.2KB 5.5MB/s 0.0s\n"}
+,{"stream_name":"stdout","time":30.13884467,"data":"[ultralytics_yolo26] {\"ok\": true, \"result\": {\"ultralytics\": \"8.4.202\", \"boxes_on_bus.jpg\": 5}}\n"}
+,{"stream_name":"stdout","time":31.48564397,"data":"[dataset] {\"ok\": true, \"result\": [\"/kaggle/input/datasets/dianalvareezz/txl-pbc-blood-cells-yolo\"]}\n"}
+,{"stream_name":"stdout","time":31.485918404,"data":"GPU_CHECK_OK\n"}
+,{"stream_name":"stderr","time":39.658674064,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":39.658708188,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":39.953464866,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":39.953505033,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":40.788633159,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":41.845598448,"data":"[NbConvertApp] Writing 285079 bytes to __results__.html\n"}
+]

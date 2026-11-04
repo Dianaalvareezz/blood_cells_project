@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "steps": {
+    "nvidia_smi": {
+      "ok": true,
+      "result": "Tesla T4, 15360 MiB, 580.178.04\nTesla T4, 15360 MiB, 580.178.04"
+    },
+    "torch_cuda": {
+      "ok": true,
+      "result": {
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "devices": [
+          "Tesla T4",
+          "Tesla T4"
+        ],
+        "matmul_10x_4096_s": 0.48,
+        "finite": true
+      }
+    },
+    "ultralytics_yolo26": {
+      "ok": true,
+      "result": {
+        "ultralytics": "8.4.202",
+        "boxes_on_bus.jpg": 5
+      }
+    },
+    "dataset": {
+      "ok": true,
+      "result": [
+        "/kaggle/input/datasets/dianalvareezz/txl-pbc-blood-cells-yolo"
+      ]
+    }
+  }
+}

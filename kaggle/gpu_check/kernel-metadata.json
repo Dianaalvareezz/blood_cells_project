@@ -1,0 +1,13 @@
+{
+  "id": "dianalvareezz/blood-cells-gpu-check",
+  "title": "blood-cells-gpu-check",
+  "code_file": "gpu_check.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["dianalvareezz/txl-pbc-blood-cells-yolo"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
