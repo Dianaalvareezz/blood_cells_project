@@ -1,0 +1,113 @@
+{
+  "dataset": "BloodMNIST (MedMNIST v2), 64x64",
+  "folder": "data/bloodminst",
+  "structure_ok": true,
+  "problems": [],
+  "classes": [
+    "basophil",
+    "eosinophil",
+    "erythroblast",
+    "immature_granulocytes",
+    "lymphocyte",
+    "monocyte",
+    "neutrophil",
+    "platelet"
+  ],
+  "classes_used_for_training": [
+    "basophil",
+    "eosinophil",
+    "erythroblast",
+    "immature_granulocytes",
+    "lymphocyte",
+    "monocyte",
+    "neutrophil"
+  ],
+  "splits": {
+    "train": {
+      "images": 11959,
+      "per_class": {
+        "basophil": 852,
+        "eosinophil": 2181,
+        "erythroblast": 1085,
+        "immature_granulocytes": 2026,
+        "lymphocyte": 849,
+        "monocyte": 993,
+        "neutrophil": 2330,
+        "platelet": 1643
+      }
+    },
+    "val": {
+      "images": 1712,
+      "per_class": {
+        "basophil": 122,
+        "eosinophil": 312,
+        "erythroblast": 155,
+        "immature_granulocytes": 290,
+        "lymphocyte": 122,
+        "monocyte": 143,
+        "neutrophil": 333,
+        "platelet": 235
+      }
+    },
+    "test": {
+      "images": 3421,
+      "per_class": {
+        "basophil": 244,
+        "eosinophil": 624,
+        "erythroblast": 311,
+        "immature_granulocytes": 579,
+        "lymphocyte": 243,
+        "monocyte": 284,
+        "neutrophil": 666,
+        "platelet": 470
+      }
+    }
+  },
+  "total_images": 17092,
+  "image_sizes": {
+    "64x64": 17092
+  },
+  "color_modes": {
+    "RGB": 17092
+  },
+  "broken_files": [],
+  "imbalance_ratio_train_used_classes": 2.74,
+  "duplicates_across_splits": [
+    [
+      "train/basophil/train_04375.png",
+      "test/basophil/test_03218.png"
+    ],
+    [
+      "train/basophil/train_04995.png",
+      "test/basophil/test_02966.png"
+    ],
+    [
+      "train/basophil/train_10505.png",
+      "test/basophil/test_02664.png"
+    ],
+    [
+      "train/basophil/train_11443.png",
+      "val/basophil/val_01485.png"
+    ],
+    [
+      "train/eosinophil/train_01018.png",
+      "test/neutrophil/test_03126.png"
+    ],
+    [
+      "train/eosinophil/train_02835.png",
+      "val/eosinophil/val_00896.png"
+    ],
+    [
+      "train/eosinophil/train_07646.png",
+      "test/eosinophil/test_01323.png"
+    ],
+    [
+      "train/eosinophil/train_08530.png",
+      "val/eosinophil/val_00956.png"
+    ],
+    [
+      "val/eosinophil/val_01593.png",
+      "test/eosinophil/test_02491.png"
+    ]
+  ]
+}

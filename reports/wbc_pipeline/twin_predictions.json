@@ -1,0 +1,4642 @@
+[
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "00fab69fff485b4f92f284d2a581d35d.png",
+  "twin": "val/monocyte/val_01601.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   105.75586700439453,
+   99.98128509521484,
+   257.4745178222656,
+   260.2023620605469
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "02b1c70149135b8588ca2dd356daa72e.png",
+  "twin": "test/basophil/test_00001.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   113.85388946533203,
+   108.94605255126953,
+   245.7940673828125,
+   252.9305419921875
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "0324a25b7edc5744b0581c12d75314fb.png",
+  "twin": "val/neutrophil/val_00642.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   114.34770202636719,
+   109.15715026855469,
+   249.7447509765625,
+   252.35836791992188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "04d5a4884f345427b95dbd9ab5d1be83.png",
+  "twin": "test/eosinophil/test_02582.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   116.3184585571289,
+   107.2996597290039,
+   251.34869384765625,
+   238.83782958984375
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "08307eca22c25842ba8607446188cfe3.png",
+  "twin": "val/eosinophil/val_00383.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   112.9366683959961,
+   113.30097961425781,
+   250.29537963867188,
+   262.9464111328125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "0c28809d61af5eb18272868849a15bf2.png",
+  "twin": "test/neutrophil/test_02753.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "neutrophil"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   106.2574691772461,
+   127.70698547363281,
+   255.4913330078125,
+   271.3414306640625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "basophil",
+  "photo": "0d414ac3ca01576bbc61e0cd82d2c91f.png",
+  "twin": "val/basophil/val_01486.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   119.02978515625,
+   127.77410888671875,
+   245.25180053710938,
+   235.9446258544922
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "0d4e8b9ed5715c518a1378cc733e05fd.png",
+  "twin": "test/lymphocyte/test_01784.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   130.44903564453125,
+   131.0203857421875,
+   235.03627014160156,
+   230.11151123046875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "0e1badd9c8e1500bbe22d96d0f91a9ac.png",
+  "twin": "test/monocyte/test_00531.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "immature_granulocytes",
+   "2.4": "immature_granulocytes"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "immature_granulocytes",
+   "2.4": "basophil"
+  },
+  "box": [
+   106.89900207519531,
+   104.8057861328125,
+   255.44644165039062,
+   256.7165222167969
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "0ef5600d4d7e53eda9bfa2237438583c.png",
+  "twin": "test/eosinophil/test_00288.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   116.31930541992188,
+   100.48794555664062,
+   292.1841125488281,
+   262.20684814453125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "0f68902befef5e44ae62cd1af246d9ed.png",
+  "twin": "test/basophil/test_03141.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   118.55939483642578,
+   120.07658386230469,
+   243.6154327392578,
+   242.1937255859375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "1063ddf76e1e5876a95656b742d2f179.png",
+  "twin": "test/eosinophil/test_03002.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   103.91635131835938,
+   109.51019287109375,
+   257.8722839355469,
+   255.24993896484375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "110cc07df36956dba50a4c7feef545ed.png",
+  "twin": "test/lymphocyte/test_00460.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "lymphocyte",
+   "2.4": "immature_granulocytes"
+  },
+  "box": [
+   128.3270263671875,
+   130.36233520507812,
+   235.08749389648438,
+   232.68202209472656
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "13415cfc8d8c5cb9b06376ef91696157.png",
+  "twin": "test/eosinophil/test_02312.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   102.4467544555664,
+   103.61875915527344,
+   258.0058288574219,
+   259.41925048828125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "166e171adb935a2d915e6965809065df.png",
+  "twin": "test/basophil/test_00542.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   122.84883117675781,
+   119.26278686523438,
+   238.81695556640625,
+   240.92930603027344
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "17f5f1d458c25f8190d9e07b740a7429.png",
+  "twin": "val/eosinophil/val_01646.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "basophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   105.63795471191406,
+   103.18501281738281,
+   254.66888427734375,
+   260.41326904296875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "1aeb8e122db65081b73768b8a4edfc28.png",
+  "twin": "test/eosinophil/test_02000.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "basophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   116.3311996459961,
+   114.95977020263672,
+   245.52696228027344,
+   248.4322509765625
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "2128be0130da5e6b9079767d433b782c.png",
+  "twin": "test/eosinophil/test_01078.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   110.31696319580078,
+   109.87769317626953,
+   252.468994140625,
+   252.10256958007812
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "21e39d888e7d595db608824c98845322.png",
+  "twin": "test/basophil/test_03045.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "immature_granulocytes",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   114.9583740234375,
+   111.49420928955078,
+   250.00064086914062,
+   254.24453735351562
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "227a09430d935871ad5dfa9cb2ad479e.png",
+  "twin": "val/neutrophil/val_01433.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   100.88521575927734,
+   101.76734924316406,
+   259.17626953125,
+   260.01226806640625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "244ff8c4c94c5d78bd0876862f3f9f6d.png",
+  "twin": "val/monocyte/val_01683.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "basophil"
+  },
+  "box": [
+   81.20836639404297,
+   76.06529235839844,
+   285.3438720703125,
+   286.8117980957031
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "25bfdbb4c9165c16937c4b6f5d693a6c.png",
+  "twin": "test/neutrophil/test_02982.png",
+  "reference": "immature_granulocytes",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "immature_granulocytes",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "basophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   117.85370635986328,
+   115.73875427246094,
+   245.08407592773438,
+   246.7060546875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "271f90ea634b5a20b809d35bcc2bf478.png",
+  "twin": "test/monocyte/test_00626.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   101.78772735595703,
+   104.75527954101562,
+   265.1069030761719,
+   258.2013244628906
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "2980c5eccdb05e738d562123c249b46d.png",
+  "twin": "test/basophil/test_01811.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   121.18533325195312,
+   119.9593505859375,
+   238.32284545898438,
+   243.43919372558594
+  ]
+ },
+ {
+  "split": "val",
+  "label": "basophil",
+  "photo": "298b5f80bfce5f14bd7381c3922c98b9.png",
+  "twin": "val/basophil/val_00631.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   115.49459075927734,
+   99.61622619628906,
+   252.09426879882812,
+   246.84901428222656
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "2a42d5dadf5c5d358fa98e57b52dff88.png",
+  "twin": "test/lymphocyte/test_01001.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   122.06208801269531,
+   122.53073120117188,
+   240.14651489257812,
+   262.2539367675781
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "2b18cd567b1751b7bff4215bea96f45f.png",
+  "twin": "test/eosinophil/test_01209.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "basophil",
+   "1.8": "eosinophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   111.83885192871094,
+   112.69841003417969,
+   251.94338989257812,
+   251.13790893554688
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "2edbd0c092a15e439bdf3f70a946c888.png",
+  "twin": "test/monocyte/test_01360.png",
+  "reference": "immature_granulocytes",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "lymphocyte",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "monocyte",
+   "2.0": "immature_granulocytes",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   110.01165771484375,
+   116.60086059570312,
+   254.0089111328125,
+   252.3115234375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "2f36abde850550fe88707032f04fe22f.png",
+  "twin": "test/eosinophil/test_00688.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   108.99686431884766,
+   125.51034545898438,
+   252.00161743164062,
+   271.02728271484375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "2fbbd5c6328e5dca8378eaccd231c9b7.png",
+  "twin": "test/basophil/test_02987.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   107.41990661621094,
+   126.27241516113281,
+   255.65087890625,
+   238.99093627929688
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "31bb11fdbdc2584d9c96afa1a312b9fb.png",
+  "twin": "test/neutrophil/test_02563.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   114.66630554199219,
+   123.77363586425781,
+   245.9995574951172,
+   253.46295166015625
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "3333d27bca2c521cbb4d1c603bef34dd.png",
+  "twin": "test/eosinophil/test_01132.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   112.6884536743164,
+   114.75689697265625,
+   249.198486328125,
+   249.03756713867188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "341259b133ce57dd8c50f9901e8b6f51.png",
+  "twin": "test/neutrophil/test_01144.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   112.7402114868164,
+   110.38347625732422,
+   248.46597290039062,
+   250.4344482421875
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "34f4f9fc8e395ebdb3b7e4ac58464d7e.png",
+  "twin": "val/neutrophil/val_01502.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   116.42791748046875,
+   123.10281372070312,
+   243.0462646484375,
+   246.9242401123047
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "41570446c5145d45aefc019ac965291a.png",
+  "twin": "test/basophil/test_01687.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   120.26266479492188,
+   105.90365600585938,
+   246.331298828125,
+   256.18328857421875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "41b95a2435d857a2a3e582d164de706d.png",
+  "twin": "test/eosinophil/test_00407.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   112.0347671508789,
+   107.04188537597656,
+   249.85910034179688,
+   257.2750549316406
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "4462714bf9545e52bf130b7c06b9d935.png",
+  "twin": "val/monocyte/val_00173.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   93.26530456542969,
+   78.51390075683594,
+   266.0848693847656,
+   280.9934387207031
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "457c629589a7553ab18b17b6a57b6394.png",
+  "twin": "val/monocyte/val_01330.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "monocyte"
+  },
+  "box": [
+   104.08763122558594,
+   99.94022369384766,
+   257.128662109375,
+   262.0221252441406
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "45c37426232d5f8bb50e0aaaabf1330e.png",
+  "twin": "test/monocyte/test_01664.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "immature_granulocytes",
+   "2.0": "lymphocyte",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   78.89632415771484,
+   81.73676300048828,
+   279.23016357421875,
+   280.82574462890625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "4826b0c9c9555003a9f16e8f5e310582.png",
+  "twin": "val/lymphocyte/val_00715.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "monocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   119.18437194824219,
+   114.54122161865234,
+   239.93914794921875,
+   244.609375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "4d967f92175d52f48022ce8bc2ca0f24.png",
+  "twin": "test/lymphocyte/test_01893.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   129.2720184326172,
+   129.87962341308594,
+   230.325927734375,
+   233.22817993164062
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "510557c182eb5803b4172fabf7aa957a.png",
+  "twin": "val/neutrophil/val_00568.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   109.66868591308594,
+   110.29652404785156,
+   251.47308349609375,
+   251.74942016601562
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "511d11191d0b5cf3992d85ace5883556.png",
+  "twin": "test/lymphocyte/test_01380.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   128.69239807128906,
+   122.05195617675781,
+   230.69302368164062,
+   230.75033569335938
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "5260873e01a5520fafb441642846b52e.png",
+  "twin": "test/eosinophil/test_01982.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   91.95417022705078,
+   103.85506439208984,
+   258.8724670410156,
+   269.3553771972656
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "54ba752499f7544eb245824b2e3e758a.png",
+  "twin": "test/neutrophil/test_01408.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   124.3775634765625,
+   111.92899322509766,
+   233.2467803955078,
+   259.4112243652344
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "59e541e64a86547c84c8bc9efa94d1db.png",
+  "twin": "val/neutrophil/val_01288.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "neutrophil"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   108.36814880371094,
+   111.64122009277344,
+   251.53140258789062,
+   250.93881225585938
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "5a2899b3019759ffa2cfda0c4d593d20.png",
+  "twin": "val/lymphocyte/val_00620.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "basophil",
+   "1.4": "monocyte",
+   "1.6": "basophil",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   130.1565704345703,
+   130.46278381347656,
+   231.01190185546875,
+   230.02102661132812
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "5aa7d31d182a5bf6b7d525c18e27c0f6.png",
+  "twin": "val/monocyte/val_00904.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "erythroblast",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   93.97814178466797,
+   80.92980194091797,
+   269.9730529785156,
+   285.1001892089844
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "5cdf96cd2c5d55b2a31346b596edeec1.png",
+  "twin": "test/monocyte/test_02013.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "immature_granulocytes",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   112.4328384399414,
+   115.6874008178711,
+   247.4332275390625,
+   248.22006225585938
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "612bf0601b0d5ae5b2621586923a0b16.png",
+  "twin": "test/basophil/test_01748.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   107.96113586425781,
+   113.18385314941406,
+   260.9964599609375,
+   262.0394287109375
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "64865465f4c753968d7ee0b07e1fa647.png",
+  "twin": "val/lymphocyte/val_01559.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   129.17532348632812,
+   123.67608642578125,
+   232.17201232910156,
+   238.32955932617188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "6bd6ea4350995982848ecda365dd65cf.png",
+  "twin": "test/lymphocyte/test_01298.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   125.24380493164062,
+   128.820556640625,
+   240.97645568847656,
+   233.55593872070312
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "6d6541ab0bfc5a909456f55455794987.png",
+  "twin": "test/neutrophil/test_01545.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "immature_granulocytes",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   112.53309631347656,
+   113.344970703125,
+   248.82351684570312,
+   250.47686767578125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "6d6f1f8b2df85248982d2399814ba16b.png",
+  "twin": "test/lymphocyte/test_00015.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   128.44015502929688,
+   125.5369873046875,
+   233.710693359375,
+   236.97335815429688
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "6dafb0e2dd745e6eaf48adf4be4dd031.png",
+  "twin": "test/eosinophil/test_01442.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   105.39759063720703,
+   102.49972534179688,
+   259.2952880859375,
+   262.060791015625
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "6fd3789710685f44855e5339bd3b48d0.png",
+  "twin": "test/neutrophil/test_02005.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   114.97984313964844,
+   116.32398986816406,
+   244.46292114257812,
+   260.3823547363281
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "717f22622aa45d59b233de63de7b1ac8.png",
+  "twin": "test/basophil/test_01413.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   120.65603637695312,
+   117.89395141601562,
+   242.72705078125,
+   250.95187377929688
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "7403ffaac0a7560e937134fff64b363c.png",
+  "twin": "val/eosinophil/val_01399.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   97.31851959228516,
+   101.68894958496094,
+   261.2950439453125,
+   262.2751770019531
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "755658968a5e51fd89ace8b1a8a315c4.png",
+  "twin": "test/lymphocyte/test_00187.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   121.19305419921875,
+   121.20773315429688,
+   237.22396850585938,
+   241.18653869628906
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "7790329c133d55cab4efa466a3a87f95.png",
+  "twin": "test/basophil/test_01862.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   127.40255737304688,
+   140.78660583496094,
+   234.65443420410156,
+   254.19146728515625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "77cbd8b1df5e5872a16bad4ded8a9a20.png",
+  "twin": "val/neutrophil/val_01072.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "basophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   112.67286682128906,
+   119.666259765625,
+   250.0985107421875,
+   258.56842041015625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "7840c76665a15e1db710ffe664d27677.png",
+  "twin": "val/neutrophil/val_01339.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   109.66964721679688,
+   111.24859619140625,
+   253.4066162109375,
+   253.60064697265625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "7a78332281a65bdab5523f9d3a10eddf.png",
+  "twin": "val/monocyte/val_00784.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   110.0350112915039,
+   111.41679382324219,
+   255.11434936523438,
+   251.85125732421875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "7b4648dc227f5b43a6fc0a2a7269d329.png",
+  "twin": "test/monocyte/test_00189.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "erythroblast",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   96.4840087890625,
+   97.75984191894531,
+   269.04119873046875,
+   264.31268310546875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "81d7a25cf55258b08d1ba536f3c307b1.png",
+  "twin": "test/eosinophil/test_00807.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   113.28981018066406,
+   115.53221130371094,
+   246.18714904785156,
+   247.28170776367188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "824db8d8b9f1531d82f6f625746e34f5.png",
+  "twin": "test/lymphocyte/test_01895.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   131.27020263671875,
+   121.05810546875,
+   233.5545196533203,
+   239.67288208007812
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "84139540faeb5007a8e250c7ac9545cc.png",
+  "twin": "test/neutrophil/test_01812.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "immature_granulocytes",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   111.29713439941406,
+   114.84420776367188,
+   250.6544189453125,
+   260.8663024902344
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "845f9e108ede5703939a406f09874edb.png",
+  "twin": "test/monocyte/test_01789.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   101.21459197998047,
+   72.05879974365234,
+   265.52227783203125,
+   290.7840881347656
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "855a553ed35553a69d5fb7eca8e33f54.png",
+  "twin": "test/eosinophil/test_02532.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   109.98524475097656,
+   106.8763656616211,
+   255.4638671875,
+   253.714111328125
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "8866c514795555b6bf9cb1f174253c58.png",
+  "twin": "val/monocyte/val_00945.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   88.40676879882812,
+   93.53173065185547,
+   274.420166015625,
+   274.7064514160156
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "88a794ea3332511886e4b18d0d4e5b07.png",
+  "twin": "val/neutrophil/val_01420.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "monocyte",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   104.02393341064453,
+   101.15140533447266,
+   260.62628173828125,
+   258.8285217285156
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "89e8d1ea9a1450119d5e9b04fc61b17b.png",
+  "twin": "test/basophil/test_02843.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   113.59938049316406,
+   115.96807861328125,
+   248.13601684570312,
+   248.55831909179688
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "8febde3650e95e3a88f963e8085bc231.png",
+  "twin": "test/neutrophil/test_02958.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   113.85660552978516,
+   141.1447296142578,
+   249.47308349609375,
+   278.2408752441406
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "9149dc9901345bb2b22035947fc21473.png",
+  "twin": "test/lymphocyte/test_02924.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   132.76251220703125,
+   147.84120178222656,
+   229.5202178955078,
+   237.1131591796875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "955bfda96c125ba78ebd273a0483c10d.png",
+  "twin": "test/neutrophil/test_01067.png",
+  "reference": "immature_granulocytes",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "immature_granulocytes",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   117.9464111328125,
+   118.43550109863281,
+   242.6956024169922,
+   243.65138244628906
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "968e998cf2fb5ffc825d23da5604a278.png",
+  "twin": "val/neutrophil/val_00499.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "immature_granulocytes",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   102.14009857177734,
+   99.86732482910156,
+   258.1921691894531,
+   265.02264404296875
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "a1f5fae233bf5bb99213d87babb3bb6e.png",
+  "twin": "val/eosinophil/val_00103.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   110.42220306396484,
+   109.93657684326172,
+   252.11553955078125,
+   253.28936767578125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "a3be0b630e245569b1adc3898c3deb6e.png",
+  "twin": "test/eosinophil/test_01457.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   97.18624877929688,
+   101.1098403930664,
+   268.5699157714844,
+   269.0008239746094
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "a9005e1cb0205497845b0abbcbb900bb.png",
+  "twin": "test/monocyte/test_01913.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   83.27200317382812,
+   74.43577575683594,
+   279.6277160644531,
+   287.2962646484375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "afe435f5522f51e786d47d628a684c9c.png",
+  "twin": "test/basophil/test_01268.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   128.88525390625,
+   112.86443328857422,
+   238.21060180664062,
+   252.76742553710938
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "bb429f781f5e5cb8a1a1bdbdbf18d448.png",
+  "twin": "test/basophil/test_02175.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   125.87564086914062,
+   118.86473846435547,
+   237.95291137695312,
+   244.76409912109375
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "bfea48a8ad74510c827ed62f1ba02c9e.png",
+  "twin": "val/monocyte/val_01695.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "monocyte",
+   "1.8": "erythroblast",
+   "2.0": "basophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   101.5168228149414,
+   41.48133850097656,
+   257.18695068359375,
+   292.83843994140625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "c0043cf8bcf155c59b095efe30c9eb69.png",
+  "twin": "val/lymphocyte/val_01027.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   131.70753479003906,
+   131.7606201171875,
+   231.37298583984375,
+   230.24710083007812
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "c1380dbc4db4549f86e19f4f823f82a4.png",
+  "twin": "val/neutrophil/val_01084.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   111.60160827636719,
+   112.6424331665039,
+   249.72415161132812,
+   250.08517456054688
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "c2e11faed5405722bad57c19c84b68a0.png",
+  "twin": "test/neutrophil/test_01713.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "immature_granulocytes",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   114.98058319091797,
+   108.27180480957031,
+   244.59910583496094,
+   255.9256591796875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "c2eb55e6816856df9b4d3b2c767f8b90.png",
+  "twin": "test/neutrophil/test_00781.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "basophil",
+   "2.0": "lymphocyte",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   131.45223999023438,
+   106.7653579711914,
+   231.31346130371094,
+   254.62399291992188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "c45ba4a59f0c55ac9dffe3662f09788b.png",
+  "twin": "test/lymphocyte/test_01712.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   133.99179077148438,
+   127.14474487304688,
+   225.58114624023438,
+   235.12106323242188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "c59288b13cb45900babfa037e61a6b92.png",
+  "twin": "test/lymphocyte/test_02174.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   127.70884704589844,
+   129.2462921142578,
+   233.86859130859375,
+   232.631103515625
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "c6e2ac6538965d69917a4a051b602a7f.png",
+  "twin": "test/monocyte/test_01854.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "immature_granulocytes",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "immature_granulocytes",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   80.76786041259766,
+   105.53301239013672,
+   280.31964111328125,
+   297.8373107910156
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "c84b701a305e548ca8b0344ff6359985.png",
+  "twin": "val/eosinophil/val_00678.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   105.82176208496094,
+   120.55862426757812,
+   256.979248046875,
+   267.3988342285156
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "ca0e8468626f5c76b0ef61b720a97bda.png",
+  "twin": "val/monocyte/val_00749.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "immature_granulocytes"
+  },
+  "box": [
+   103.50597381591797,
+   103.66203308105469,
+   260.1559753417969,
+   261.4625549316406
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "cbe677401a7359c6901ee151d7f17bc2.png",
+  "twin": "test/monocyte/test_00050.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "erythroblast",
+   "2.0": "erythroblast",
+   "2.4": "immature_granulocytes"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   112.2818603515625,
+   118.3840103149414,
+   244.92742919921875,
+   241.7651824951172
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "ccae48ac58cf587abd9861880091855b.png",
+  "twin": "test/lymphocyte/test_00309.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   132.7231903076172,
+   130.63250732421875,
+   228.95748901367188,
+   231.32115173339844
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "ce580c7043185399ae02381f3a410138.png",
+  "twin": "val/neutrophil/val_00730.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "box": [
+   107.11522674560547,
+   117.64144897460938,
+   255.60256958007812,
+   245.22967529296875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "da91475847585269ad107e64e36c2430.png",
+  "twin": "test/lymphocyte/test_01236.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   126.73770141601562,
+   130.61509704589844,
+   237.2484893798828,
+   231.65467834472656
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "df7a8fd545515acaa00bdc4ddfa55cd2.png",
+  "twin": "val/lymphocyte/val_00231.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   127.05711364746094,
+   127.90875244140625,
+   233.891357421875,
+   237.4982147216797
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "e2d600e2a5455345be3d98532a8c4995.png",
+  "twin": "val/lymphocyte/val_00208.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   124.83662414550781,
+   124.52389526367188,
+   236.0821533203125,
+   240.19602966308594
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "e4eefa4c0a255bc3b36a8dd2c075fea9.png",
+  "twin": "val/neutrophil/val_00330.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   107.40128326416016,
+   107.9172134399414,
+   255.5286865234375,
+   258.2411193847656
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "e72d3d74516c5f6999cae616f4863eaa.png",
+  "twin": "val/eosinophil/val_01549.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "basophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   107.14836120605469,
+   119.160400390625,
+   253.10592651367188,
+   268.59857177734375
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "e850a29723595b19ac15ef6575172c1f.png",
+  "twin": "val/lymphocyte/val_00790.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   129.50457763671875,
+   134.8163604736328,
+   233.0330352783203,
+   227.59730529785156
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "eb71a1c2fbc9542cb054adc4e86db4d4.png",
+  "twin": "val/lymphocyte/val_00629.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   131.84495544433594,
+   130.4873046875,
+   233.015380859375,
+   229.1856689453125
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "ee025a33f33b50deb9b967a63c1d0294.png",
+  "twin": "val/eosinophil/val_01164.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   112.0499496459961,
+   108.53570556640625,
+   253.2601318359375,
+   253.9326171875
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "ee79ae97a3735789b514f1c2ed8edeed.png",
+  "twin": "val/monocyte/val_01494.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   85.3390884399414,
+   63.265663146972656,
+   274.7321472167969,
+   296.650634765625
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "f11ff108e88c5c53817dcf6ef4f81f2f.png",
+  "twin": "val/lymphocyte/val_00958.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   127.16348266601562,
+   129.97833251953125,
+   242.9691925048828,
+   239.77992248535156
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "f1469441b1785acdab70144cadbd42e4.png",
+  "twin": "test/eosinophil/test_01450.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   115.37687683105469,
+   117.97917175292969,
+   245.33558654785156,
+   257.233154296875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "f176732e948d5065960f378bd7bf1ff7.png",
+  "twin": "test/basophil/test_01057.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   114.46835327148438,
+   126.91221618652344,
+   236.59288024902344,
+   261.2556457519531
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "fb4717d6ef2c5797901c0bfcdf494b82.png",
+  "twin": "test/lymphocyte/test_03191.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   126.044677734375,
+   126.31068420410156,
+   235.96336364746094,
+   234.80938720703125
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "fb6bc9963b8d5e3a8a2b319eb6e42433.png",
+  "twin": "val/eosinophil/val_01526.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "basophil",
+   "2.0": "eosinophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   106.2299575805664,
+   109.34051513671875,
+   254.38223266601562,
+   251.81893920898438
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "ff302acfe688577ba3d5da3b6901557e.png",
+  "twin": "val/eosinophil/val_00108.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   112.43718719482422,
+   103.54571533203125,
+   247.52273559570312,
+   235.53173828125
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "10c5112dfae4533cb9fa8f6f73a49274.png",
+  "twin": "val/neutrophil/val_01020.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "neutrophil"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   110.02417755126953,
+   111.69371032714844,
+   252.46646118164062,
+   248.99215698242188
+  ]
+ },
+ {
+  "split": "val",
+  "label": "basophil",
+  "photo": "2b17a4069fd3531da67253816570208e.png",
+  "twin": "val/basophil/val_00867.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   113.15459442138672,
+   101.67481994628906,
+   245.06736755371094,
+   260.1779479980469
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "2be4b8d9382b5cb38274acded508cc3f.png",
+  "twin": "test/lymphocyte/test_00453.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   126.07888793945312,
+   125.5538330078125,
+   234.47401428222656,
+   234.5341796875
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "3fe6e90eb148500ca537ba17919ba93e.png",
+  "twin": "val/neutrophil/val_00228.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   112.36881256103516,
+   128.12957763671875,
+   250.05905151367188,
+   263.0603332519531
+  ]
+ },
+ {
+  "split": "val",
+  "label": "monocyte",
+  "photo": "41891e8580b8513f937b4de5663223b9.png",
+  "twin": "val/monocyte/val_00210.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "erythroblast",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "monocyte"
+  },
+  "box": [
+   98.5671157836914,
+   98.19601440429688,
+   264.0843505859375,
+   265.3129577636719
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "42b019e3945c50e4b02c44575b878af8.png",
+  "twin": "test/basophil/test_01482.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   131.96817016601562,
+   120.58702087402344,
+   249.33969116210938,
+   247.82675170898438
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "4cb6468e96f05719abfc402ac793347b.png",
+  "twin": "test/lymphocyte/test_02693.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   137.50418090820312,
+   137.19830322265625,
+   227.1612548828125,
+   226.75657653808594
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "540ee4cb0e2d58ff91327a08006a9959.png",
+  "twin": "test/monocyte/test_02171.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "erythroblast",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "monocyte"
+  },
+  "box": [
+   94.39913940429688,
+   104.71630859375,
+   267.9588928222656,
+   283.3988342285156
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "557191d782f455e8803695aec55751aa.png",
+  "twin": "test/lymphocyte/test_00269.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   132.22251892089844,
+   129.32366943359375,
+   227.71365356445312,
+   232.73617553710938
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "5e8354d7bdf8586dab3bc90d6c6590c1.png",
+  "twin": "test/basophil/test_02215.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   117.6875991821289,
+   107.26829528808594,
+   245.6475830078125,
+   255.8304443359375
+  ]
+ },
+ {
+  "split": "val",
+  "label": "eosinophil",
+  "photo": "604333d2a10c55a980b23d2fe7ecacb1.png",
+  "twin": "val/eosinophil/val_00400.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "eosinophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   106.25979614257812,
+   102.34992980957031,
+   254.37237548828125,
+   259.0730285644531
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "65e90756b69452af898c7d2ed656622a.png",
+  "twin": "test/monocyte/test_00243.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "lymphocyte",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   94.19062042236328,
+   69.4229507446289,
+   267.8584289550781,
+   272.6758117675781
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "6bc4d558f88451fe9c83e6e61283d522.png",
+  "twin": "test/monocyte/test_02388.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   115.75181579589844,
+   116.9638671875,
+   246.05003356933594,
+   246.1817169189453
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "6cae8f09b6555c7aa9c507e8098c6151.png",
+  "twin": "test/neutrophil/test_00809.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "immature_granulocytes",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   116.26959991455078,
+   125.04936218261719,
+   246.82162475585938,
+   256.931884765625
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "725736c0a7ea5b9693dbb031efa3cd23.png",
+  "twin": "test/lymphocyte/test_03258.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   119.63800048828125,
+   117.2622299194336,
+   244.2323760986328,
+   244.76690673828125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "7ca874e3d01d55f8a1f49e31f038a358.png",
+  "twin": "test/monocyte/test_02251.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "immature_granulocytes",
+   "2.4": "immature_granulocytes"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   113.87870025634766,
+   114.16989135742188,
+   246.6784210205078,
+   248.35040283203125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "8e3af5cf7fbc5a4d8287c2c52632733c.png",
+  "twin": "test/eosinophil/test_02305.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   119.76327514648438,
+   118.65802764892578,
+   241.79434204101562,
+   249.36892700195312
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "964e84c528765ac5b2a7783a1f020c4e.png",
+  "twin": "val/lymphocyte/val_00771.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   123.46380615234375,
+   124.24777221679688,
+   239.16014099121094,
+   239.09426879882812
+  ]
+ },
+ {
+  "split": "test",
+  "label": "neutrophil",
+  "photo": "9e459203b1d05269965bea9afec45e29.png",
+  "twin": "test/neutrophil/test_00264.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "monocyte"
+  },
+  "box": [
+   96.51729583740234,
+   117.98760223388672,
+   262.52825927734375,
+   291.9845275878906
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "a076bf9b3cfb5e02bfee0bec86fcef6d.png",
+  "twin": "test/lymphocyte/test_01786.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "monocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   113.46711730957031,
+   124.0665283203125,
+   250.76522827148438,
+   240.18093872070312
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "a4873cc41c535b45ab7bf7f23b48f238.png",
+  "twin": "test/basophil/test_00674.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   116.46617889404297,
+   118.95822143554688,
+   244.85911560058594,
+   243.8992462158203
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "b40ffdb28cf45ccd8e61e28debf6cebe.png",
+  "twin": "test/lymphocyte/test_03098.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   116.73528289794922,
+   127.95213317871094,
+   243.89910888671875,
+   234.77572631835938
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "b639cde2972b5e0482620a6c935130b2.png",
+  "twin": "test/lymphocyte/test_00624.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "lymphocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   124.56977844238281,
+   115.36835479736328,
+   237.6699981689453,
+   263.7288818359375
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "bd448a54de0c5879a1f284298bbfc480.png",
+  "twin": "val/lymphocyte/val_01021.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   135.8895263671875,
+   132.40391540527344,
+   225.661865234375,
+   228.24441528320312
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "c57c9c68184a5ce7a667a7ebdb8ba011.png",
+  "twin": "val/neutrophil/val_00705.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "neutrophil",
+   "2.0": "neutrophil",
+   "2.4": "neutrophil"
+  },
+  "box": [
+   116.64334869384766,
+   114.8778076171875,
+   245.5799560546875,
+   249.00064086914062
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "dd797bced2625752b3f63e80621b15de.png",
+  "twin": "test/basophil/test_02423.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   118.69389343261719,
+   119.76927185058594,
+   241.56430053710938,
+   245.5330810546875
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "45bc2bb9c9bd57688c652db42de77007.png",
+  "twin": "val/lymphocyte/val_00549.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "lymphocyte",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   131.39862060546875,
+   135.5926971435547,
+   229.62054443359375,
+   228.43521118164062
+  ]
+ },
+ {
+  "split": "val",
+  "label": "neutrophil",
+  "photo": "4fc5433e7a4a5ba28bc7415677390f39.png",
+  "twin": "val/neutrophil/val_00533.png",
+  "reference": "neutrophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "neutrophil",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "immature_granulocytes",
+   "2.4": "immature_granulocytes"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "neutrophil",
+   "1.4": "neutrophil",
+   "1.6": "neutrophil",
+   "1.8": "immature_granulocytes",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   114.40277099609375,
+   113.26814270019531,
+   249.26229858398438,
+   253.23025512695312
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "63ff753a509c59d7896f9515b7851549.png",
+  "twin": "test/eosinophil/test_02691.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   108.0123062133789,
+   107.23310852050781,
+   253.91876220703125,
+   253.47494506835938
+  ]
+ },
+ {
+  "split": "val",
+  "label": "lymphocyte",
+  "photo": "81803eb0499a5778ba6c3bb36a1e3c8b.png",
+  "twin": "val/lymphocyte/val_00832.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "lymphocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "monocyte",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   118.55960845947266,
+   118.38124084472656,
+   241.14764404296875,
+   243.3746795654297
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "a7e1433b7e0653d6b572a1198d7a470d.png",
+  "twin": "test/monocyte/test_02745.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "monocyte"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "monocyte"
+  },
+  "box": [
+   88.23151397705078,
+   78.64430236816406,
+   285.85809326171875,
+   284.65802001953125
+  ]
+ },
+ {
+  "split": "test",
+  "label": "basophil",
+  "photo": "af97ac7c36135543a9ea3e2ced4a1e9a.png",
+  "twin": "test/basophil/test_03027.png",
+  "reference": "basophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "basophil"
+  },
+  "box": [
+   120.91262817382812,
+   108.27799987792969,
+   241.1306915283203,
+   254.47994995117188
+  ]
+ },
+ {
+  "split": "test",
+  "label": "eosinophil",
+  "photo": "b2f8de57c5505285859cf745cf828bfa.png",
+  "twin": "test/eosinophil/test_02997.png",
+  "reference": "eosinophil",
+  "detected": true,
+  "shrink64": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "eosinophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "eosinophil"
+  },
+  "direct": {
+   "1.0": "eosinophil",
+   "1.2": "eosinophil",
+   "1.4": "eosinophil",
+   "1.6": "basophil",
+   "1.8": "eosinophil",
+   "2.0": "eosinophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   125.43437194824219,
+   99.94979095458984,
+   235.9082794189453,
+   261.20037841796875
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "b491965312b15cdf8255f3a62ed8abc3.png",
+  "twin": "test/monocyte/test_01359.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "monocyte",
+   "1.8": "monocyte",
+   "2.0": "monocyte",
+   "2.4": "erythroblast"
+  },
+  "direct": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "basophil",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   92.2931900024414,
+   47.32889175415039,
+   271.15185546875,
+   291.3900146484375
+  ]
+ },
+ {
+  "split": "test",
+  "label": "lymphocyte",
+  "photo": "c990b73d2aa05b179c85a319af5e20ab.png",
+  "twin": "test/lymphocyte/test_03330.png",
+  "reference": "lymphocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "immature_granulocytes",
+   "1.2": "monocyte",
+   "1.4": "monocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "immature_granulocytes",
+   "1.2": "immature_granulocytes",
+   "1.4": "immature_granulocytes",
+   "1.6": "immature_granulocytes",
+   "1.8": "immature_granulocytes",
+   "2.0": "basophil",
+   "2.4": "lymphocyte"
+  },
+  "box": [
+   121.38134765625,
+   121.32586669921875,
+   237.1380157470703,
+   241.5062713623047
+  ]
+ },
+ {
+  "split": "test",
+  "label": "monocyte",
+  "photo": "e00d89fd5c8b5d869f50938e1789324e.png",
+  "twin": "test/monocyte/test_02311.png",
+  "reference": "monocyte",
+  "detected": true,
+  "shrink64": {
+   "1.0": "monocyte",
+   "1.2": "monocyte",
+   "1.4": "lymphocyte",
+   "1.6": "lymphocyte",
+   "1.8": "lymphocyte",
+   "2.0": "lymphocyte",
+   "2.4": "lymphocyte"
+  },
+  "direct": {
+   "1.0": "basophil",
+   "1.2": "basophil",
+   "1.4": "monocyte",
+   "1.6": "basophil",
+   "1.8": "basophil",
+   "2.0": "basophil",
+   "2.4": "eosinophil"
+  },
+  "box": [
+   107.43960571289062,
+   106.4338150024414,
+   262.5513610839844,
+   293.8570556640625
+  ]
+ }
+]

@@ -65,6 +65,7 @@
     <button data-t="training" class="on">Training</button>
     <button data-t="model">Model performance</button>
     <button data-t="dataset">Dataset</button>
+    <button data-t="wbc">WBC classifier</button>
   </nav>
 </header>
 <main>
@@ -114,6 +115,41 @@
       <div class="card"><h3>Box centres</h3><img src="../reports/dataset/box_centres.png" alt="Heatmap of box centre positions"></div>
     </div>
     <div class="card mt"><h3>Training samples with ground truth</h3><img src="../reports/dataset/samples.png" alt="Grid of training images with boxes"></div>
+  </section>
+
+  <section id="wbc">
+    <p class="sub">Second model: classifies the type of each white blood cell (BloodMNIST, 7 classes).
+      Kernel <a id="w-klink" href="#" target="_blank" rel="noopener">…</a>
+      · <span id="w-status" class="pill UNKNOWN">loading</span> · updated <span id="w-updated">–</span></p>
+    <div class="grid mt">
+      <div class="card kpi"><div class="l">Epoch</div><div class="v" id="w-epoch">–</div>
+        <div class="bar"><div id="w-bar"></div></div></div>
+      <div class="card kpi"><div class="l">Val accuracy (latest / best)</div><div class="v" id="w-acc">–</div></div>
+      <div class="card kpi"><div class="l">Val loss (latest)</div><div class="v" id="w-vloss">–</div></div>
+      <div class="card kpi"><div class="l">Elapsed · ETA</div><div class="v" id="w-time">–</div></div>
+    </div>
+    <p class="note" id="w-note"></p>
+    <div class="grid2 mt">
+      <div class="card"><h3>Validation accuracy</h3><div class="chart"><canvas id="c-wacc"></canvas></div></div>
+      <div class="card"><h3>Loss (solid = train, dashed = val)</h3><div class="chart"><canvas id="c-wloss"></canvas></div></div>
+    </div>
+    <div id="w-model" hidden>
+      <div class="grid mt">
+        <div class="card kpi"><div class="l">Test accuracy</div><div class="v" id="w-tacc"></div></div>
+        <div class="card kpi"><div class="l">Test macro F1</div><div class="v" id="w-tf1"></div></div>
+        <div class="card kpi"><div class="l">Test macro precision</div><div class="v" id="w-tp"></div></div>
+        <div class="card kpi"><div class="l">Test macro recall</div><div class="v" id="w-tr"></div></div>
+      </div>
+      <div class="grid2 mt">
+        <div class="card"><h3>Per class · test split</h3><div class="tw"><table id="w-table"></table></div></div>
+        <div class="card"><h3>Confusion matrix · test split</h3><a href="../reports/wbc_model/confusion_matrix_test.png" target="_blank"><img src="../reports/wbc_model/confusion_matrix_test.png" alt="Confusion matrix of the WBC classifier on the test split"></a></div>
+      </div>
+      <div class="card mt"><h3>Most frequent mistakes</h3><img src="../reports/wbc_model/mistakes_test.png" alt="Examples of misclassified test images"></div>
+    </div>
+    <div class="grid2 mt">
+      <div class="card"><h3>Dataset · images per class and split</h3><img src="../reports/wbc_dataset/class_distribution.png" alt="Bar chart of BloodMNIST images per class and split"></div>
+      <div class="card"><h3>Dataset · class balance (train)</h3><img src="../reports/wbc_dataset/class_balance.png" alt="Training images per class"></div>
+    </div>
   </section>
 </main>
 
@@ -239,8 +275,56 @@ async function refresh() {
   await renderModel();
 }
 
+async function renderWbc() {
+  const live = await getJSON("data/live_wbc.json");
+  if (live) {
+    $("w-klink").textContent = live.kernel; $("w-klink").href = live.kernel_url;
+    $("w-status").textContent = live.status.toLowerCase(); $("w-status").className = "pill " + live.status;
+    $("w-updated").textContent = new Date(live.updated_at).toLocaleTimeString();
+  }
+  const csv = await getText("../reports/wbc_model/results.csv");
+  const ep = csv ? parseCSV(csv) : (live?.epochs || []);
+  const last = ep[ep.length - 1];
+  const total = live?.start?.cfg?.epochs || last?.epochs || 40;
+  if (last) {
+    $("w-epoch").textContent = `${last.epoch} / ${csv ? last.epoch : total}`;
+    $("w-bar").style.width = (csv ? 100 : Math.min(100, 100 * last.epoch / total)) + "%";
+    const best = Math.max(...ep.map(e => e["metrics/accuracy_top1"] || 0));
+    $("w-acc").textContent = `${f3(last["metrics/accuracy_top1"])} / ${f3(best)}`;
+    $("w-vloss").textContent = f3(last["val/loss"]);
+    const el = last.elapsed_s, eta = el && last.epoch < total ? el / last.epoch * (total - last.epoch) : null;
+    $("w-time").textContent = csv ? "done" : el ? `${fmtDur(el)} · ${eta ? fmtDur(eta) : "done"}` : "–";
+  }
+  let note = "";
+  if (!live && !csv) note = "Start the monitor with: .venv/bin/python scripts/monitor.py --job wbc";
+  if (live?.status === "RUNNING" && !ep.length)
+    note = "The kernel is running on Kaggle. Curves appear when Kaggle exposes the log, often only at the end. Early stopping may end the run before the last epoch.";
+  if (live?.status === "ERROR") note = "The Kaggle kernel failed. Open the kernel link above to see the error.";
+  $("w-note").textContent = note;
+  const pts = k => ep.filter(e => e[k] != null && !isNaN(e[k])).map(e => ({ x: e.epoch, y: e[k] }));
+  lineChart("c-wacc", [
+    { label: "top-1 accuracy", data: pts("metrics/accuracy_top1"), borderColor: css("--accent"), borderWidth: 2 },
+    { label: "top-5 accuracy", data: pts("metrics/accuracy_top5"), borderColor: "#16a34a", borderWidth: 1.5 },
+  ], 1);
+  lineChart("c-wloss", [
+    { label: "train loss", data: pts("train/loss"), borderColor: "#2f5bd3", borderWidth: 2 },
+    { label: "val loss", data: pts("val/loss"), borderColor: "#2f5bd3", borderWidth: 2, borderDash: [5, 4] },
+  ]);
+  const fm = await getJSON("../reports/wbc_model/final_metrics.json");
+  if (!fm) return;
+  $("w-model").hidden = false;
+  const t = fm.test;
+  $("w-tacc").textContent = f3(t.accuracy); $("w-tf1").textContent = f3(t.macro_f1);
+  $("w-tp").textContent = f3(t.macro_precision); $("w-tr").textContent = f3(t.macro_recall);
+  $("w-table").innerHTML = `<tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1</th><th>Images</th></tr>` +
+    Object.entries(t.per_class).map(([c, m]) => `<tr><td>${c.replace("_", " ")}</td><td>${f3(m.precision)}</td><td>${f3(m.recall)}</td><td>${f3(m.f1)}</td><td>${m.support}</td></tr>`).join("") +
+    `<tr><th>Accuracy</th><th></th><th></th><th>${f3(t.accuracy)}</th><th>${Object.values(t.per_class).reduce((a, m) => a + m.support, 0)}</th></tr>`;
+}
+
 renderDataset();
 refresh();
+renderWbc();
+setInterval(renderWbc, 30000);
 setInterval(refresh, 30000);
 </script>
 </body>

@@ -1,12 +1,17 @@
-"""Monitor the Kaggle training kernel and feed the HTML dashboard.
+"""Monitor a Kaggle training kernel and feed the HTML dashboard.
 
-Polls the kernel status and log, extracts the per-epoch `METRICS {...}` lines written by
-kaggle/train/train.py, and writes dashboard/data/live.json. When the kernel finishes it
-downloads the outputs to runs/kaggle/ and builds the training + model reports.
+Polls the kernel status and log, extracts the per-epoch `METRICS {...}` lines written by the
+training script, and writes the job's live JSON for the dashboard. When the kernel finishes it
+downloads the outputs and builds the reports.
+
+Jobs (--job):
+  detector (default)  kaggle/train/train.py          -> dashboard/data/live.json,     runs/kaggle/
+  wbc                 kaggle/train_wbc/train_wbc.py  -> dashboard/data/live_wbc.json, runs/kaggle_wbc/
 
 Usage:
-  .venv/bin/python scripts/monitor.py            # poll + serve dashboard on http://localhost:8000
-  .venv/bin/python scripts/monitor.py --once     # single poll, no server
+  .venv/bin/python scripts/monitor.py              # poll + serve dashboard on http://localhost:8000
+  .venv/bin/python scripts/monitor.py --job wbc    # same, for the white-blood-cell classifier
+  .venv/bin/python scripts/monitor.py --once       # single poll, no server
 """
 import argparse
 import functools
@@ -22,10 +27,27 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-KERNEL = "dianalvareezz/blood-cells-yolo26-train"
 KAGGLE = str(ROOT / ".venv" / "bin" / "kaggle")
-LIVE = ROOT / "dashboard" / "data" / "live.json"
-OUT = ROOT / "runs" / "kaggle"
+JOBS = {
+    "detector": dict(kernel="dianalvareezz/blood-cells-yolo26-train", live="live.json", out="kaggle",
+                     report="make_reports.py", metric=("metrics/mAP50-95", "mAP50-95")),
+    "wbc": dict(kernel="dianalvareezz/blood-cells-wbc-classifier-train", live="live_wbc.json",
+                out="kaggle_wbc", report="make_wbc_reports.py", metric=("metrics/accuracy_top1", "top-1 acc")),
+}
+# Set by select_job(); the detector job is the default.
+KERNEL = LIVE = OUT = REPORT = METRIC = None
+
+
+def select_job(name):
+    global KERNEL, LIVE, OUT, REPORT, METRIC
+    job = JOBS[name]
+    KERNEL, METRIC = job["kernel"], job["metric"]
+    LIVE = ROOT / "dashboard" / "data" / job["live"]
+    OUT = ROOT / "runs" / job["out"]
+    REPORT = ROOT / "scripts" / job["report"]
+
+
+select_job("detector")
 TAG_RE = re.compile(r"^(START|METRICS|FINAL) (\{.*\})\s*$")
 
 
@@ -97,7 +119,7 @@ def download_and_report():
     OUT.mkdir(parents=True, exist_ok=True)
     print("Downloading kernel outputs ...", flush=True)
     kaggle("kernels", "output", KERNEL, "-p", str(OUT), "-o", "-q")
-    subprocess.run([sys.executable, str(ROOT / "scripts" / "make_reports.py")], check=True)
+    subprocess.run([sys.executable, str(REPORT)], check=True)
 
 
 def poll(prev=None):
@@ -123,7 +145,7 @@ def poll(prev=None):
     last = state["epochs"][-1] if state["epochs"] else None
     msg = f"[{state['updated_at']}] {status}"
     if last:
-        msg += f" · epoch {last['epoch']}/{last['epochs']} · mAP50-95 {last.get('metrics/mAP50-95', 0):.3f}"
+        msg += f" · epoch {last['epoch']}/{last['epochs']} · {METRIC[1]} {last.get(METRIC[0], 0):.3f}"
     print(msg, flush=True)
     return state
 
@@ -141,11 +163,13 @@ def serve(port):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--job", choices=sorted(JOBS), default="detector")
     ap.add_argument("--once", action="store_true")
     ap.add_argument("--interval", type=int, default=60)
     ap.add_argument("--port", type=int, default=8000)
     ap.add_argument("--no-serve", action="store_true")
     args = ap.parse_args()
+    select_job(args.job)
     load_token()
 
     prev = json.loads(LIVE.read_text()) if LIVE.exists() else None

@@ -11,6 +11,10 @@ __pycache__/
 .DS_Store
 dashboard/data/*.tmp
 
-# raw dataset (1,260 PNGs, 49 MB); it is also hosted as a private Kaggle dataset
-data/TXL-PBC/images/
-data/TXL-PBC/labels/
+# all datasets (TXL-PBC images/labels, BloodMNIST...): never committed; they are hosted as private
+# Kaggle datasets. Only the two small TXL-PBC config files stay in git, because the scripts read data.yaml.
+data/*
+!data/TXL-PBC/
+data/TXL-PBC/*
+!data/TXL-PBC/data.yaml
+!data/TXL-PBC/README.md

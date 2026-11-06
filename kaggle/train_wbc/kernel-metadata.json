@@ -1,0 +1,13 @@
+{
+  "id": "dianalvareezz/blood-cells-wbc-classifier-train",
+  "title": "blood-cells-wbc-classifier-train",
+  "code_file": "train_wbc.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["dianalvareezz/bloodmnist-wbc-types"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

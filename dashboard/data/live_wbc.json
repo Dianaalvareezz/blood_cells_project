@@ -1,0 +1,604 @@
+{
+ "kernel": "dianalvareezz/blood-cells-wbc-classifier-train",
+ "kernel_url": "https://www.kaggle.com/code/dianalvareezz/blood-cells-wbc-classifier-train",
+ "status": "COMPLETE",
+ "status_raw": "dianalvareezz/blood-cells-wbc-classifier-train has status \"KernelWorkerStatus.COMPLETE\"",
+ "updated_at": "2026-11-06T18:46:16+00:00",
+ "first_seen_running": "2026-11-06T18:20:30+00:00",
+ "start": {
+  "cfg": {
+   "model": "yolo26s-cls.pt",
+   "epochs": 40,
+   "patience": 10,
+   "imgsz": 224,
+   "batch": 64,
+   "optimizer": "auto",
+   "cos_lr": true,
+   "flipud": 0.5,
+   "seed": 0
+  },
+  "classes": [
+   "basophil",
+   "eosinophil",
+   "erythroblast",
+   "immature_granulocytes",
+   "lymphocyte",
+   "monocyte",
+   "neutrophil"
+  ],
+  "ultralytics": "8.4.203",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "time": 1793989250.2409816,
+  "images": {
+   "train": 10316,
+   "val": 1477,
+   "test": 2951
+  }
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.96412,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.10293,
+   "train/loss": 0.88741,
+   "lr/pg0": 0.0003011,
+   "lr/pg1": 0.0003011,
+   "lr/pg2": 0.0003011,
+   "elapsed_s": 189.3,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 2,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.97156,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.08907,
+   "train/loss": 0.19267,
+   "lr/pg0": 0.0006032,
+   "lr/pg1": 0.0006032,
+   "lr/pg2": 0.0006032,
+   "elapsed_s": 225.6,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 3,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.9587,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.12128,
+   "train/loss": 0.18686,
+   "lr/pg0": 0.0009016,
+   "lr/pg1": 0.0009016,
+   "lr/pg2": 0.0009016,
+   "elapsed_s": 262.1,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 4,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.96547,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.09104,
+   "train/loss": 0.1928,
+   "lr/pg0": 0.0008966,
+   "lr/pg1": 0.0008966,
+   "lr/pg2": 0.0008966,
+   "elapsed_s": 298.6,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 5,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.96479,
+   "metrics/accuracy_top5": 0.99932,
+   "val/loss": 0.09927,
+   "train/loss": 0.14542,
+   "lr/pg0": 0.000887,
+   "lr/pg1": 0.000887,
+   "lr/pg2": 0.000887,
+   "elapsed_s": 334.7,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 6,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.97156,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.09182,
+   "train/loss": 0.13733,
+   "lr/pg0": 0.0008747,
+   "lr/pg1": 0.0008747,
+   "lr/pg2": 0.0008747,
+   "elapsed_s": 371.2,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 7,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.96615,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.08413,
+   "train/loss": 0.12837,
+   "lr/pg0": 0.00086,
+   "lr/pg1": 0.00086,
+   "lr/pg2": 0.00086,
+   "elapsed_s": 407.2,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 8,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98037,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.0524,
+   "train/loss": 0.11155,
+   "lr/pg0": 0.0008427,
+   "lr/pg1": 0.0008427,
+   "lr/pg2": 0.0008427,
+   "elapsed_s": 444.0,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 9,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98104,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.05786,
+   "train/loss": 0.12632,
+   "lr/pg0": 0.0008231,
+   "lr/pg1": 0.0008231,
+   "lr/pg2": 0.0008231,
+   "elapsed_s": 480.7,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 10,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.9675,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.07983,
+   "train/loss": 0.10128,
+   "lr/pg0": 0.0008012,
+   "lr/pg1": 0.0008012,
+   "lr/pg2": 0.0008012,
+   "elapsed_s": 517.5,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 11,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98375,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04867,
+   "train/loss": 0.09789,
+   "lr/pg0": 0.0007772,
+   "lr/pg1": 0.0007772,
+   "lr/pg2": 0.0007772,
+   "elapsed_s": 554.3,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 12,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98104,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.05371,
+   "train/loss": 0.11188,
+   "lr/pg0": 0.0007513,
+   "lr/pg1": 0.0007513,
+   "lr/pg2": 0.0007513,
+   "elapsed_s": 591.0,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 13,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.9736,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.06795,
+   "train/loss": 0.09826,
+   "lr/pg0": 0.0007235,
+   "lr/pg1": 0.0007235,
+   "lr/pg2": 0.0007235,
+   "elapsed_s": 627.9,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 14,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98443,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04711,
+   "train/loss": 0.09328,
+   "lr/pg0": 0.0006941,
+   "lr/pg1": 0.0006941,
+   "lr/pg2": 0.0006941,
+   "elapsed_s": 665.0,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 15,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98104,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.05159,
+   "train/loss": 0.08601,
+   "lr/pg0": 0.0006633,
+   "lr/pg1": 0.0006633,
+   "lr/pg2": 0.0006633,
+   "elapsed_s": 701.5,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 16,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98443,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04614,
+   "train/loss": 0.0749,
+   "lr/pg0": 0.0006312,
+   "lr/pg1": 0.0006312,
+   "lr/pg2": 0.0006312,
+   "elapsed_s": 738.1,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 17,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98714,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03766,
+   "train/loss": 0.0662,
+   "lr/pg0": 0.0005981,
+   "lr/pg1": 0.0005981,
+   "lr/pg2": 0.0005981,
+   "elapsed_s": 774.2,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 18,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.99188,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03229,
+   "train/loss": 0.06995,
+   "lr/pg0": 0.0005641,
+   "lr/pg1": 0.0005641,
+   "lr/pg2": 0.0005641,
+   "elapsed_s": 810.4,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 19,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.9763,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.07234,
+   "train/loss": 0.06671,
+   "lr/pg0": 0.0005294,
+   "lr/pg1": 0.0005294,
+   "lr/pg2": 0.0005294,
+   "elapsed_s": 846.5,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 20,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98781,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04038,
+   "train/loss": 0.06831,
+   "lr/pg0": 0.0004943,
+   "lr/pg1": 0.0004943,
+   "lr/pg2": 0.0004943,
+   "elapsed_s": 882.5,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 21,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.9851,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03883,
+   "train/loss": 0.05439,
+   "lr/pg0": 0.000459,
+   "lr/pg1": 0.000459,
+   "lr/pg2": 0.000459,
+   "elapsed_s": 918.1,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 22,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.99323,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03039,
+   "train/loss": 0.05273,
+   "lr/pg0": 0.0004237,
+   "lr/pg1": 0.0004237,
+   "lr/pg2": 0.0004237,
+   "elapsed_s": 954.2,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 23,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98578,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04733,
+   "train/loss": 0.05109,
+   "lr/pg0": 0.0003887,
+   "lr/pg1": 0.0003887,
+   "lr/pg2": 0.0003887,
+   "elapsed_s": 989.9,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 24,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.99052,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03353,
+   "train/loss": 0.04572,
+   "lr/pg0": 0.000354,
+   "lr/pg1": 0.000354,
+   "lr/pg2": 0.000354,
+   "elapsed_s": 1025.6,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 25,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98578,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04317,
+   "train/loss": 0.04794,
+   "lr/pg0": 0.00032,
+   "lr/pg1": 0.00032,
+   "lr/pg2": 0.00032,
+   "elapsed_s": 1061.5,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 26,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98578,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.04382,
+   "train/loss": 0.04441,
+   "lr/pg0": 0.0002869,
+   "lr/pg1": 0.0002869,
+   "lr/pg2": 0.0002869,
+   "elapsed_s": 1097.4,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 27,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.99255,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03296,
+   "train/loss": 0.03777,
+   "lr/pg0": 0.0002548,
+   "lr/pg1": 0.0002548,
+   "lr/pg2": 0.0002548,
+   "elapsed_s": 1133.4,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 28,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98849,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03042,
+   "train/loss": 0.04214,
+   "lr/pg0": 0.0002239,
+   "lr/pg1": 0.0002239,
+   "lr/pg2": 0.0002239,
+   "elapsed_s": 1169.8,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 29,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98646,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03748,
+   "train/loss": 0.0332,
+   "lr/pg0": 0.0001946,
+   "lr/pg1": 0.0001946,
+   "lr/pg2": 0.0001946,
+   "elapsed_s": 1205.6,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 30,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98984,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03274,
+   "train/loss": 0.03351,
+   "lr/pg0": 0.0001668,
+   "lr/pg1": 0.0001668,
+   "lr/pg2": 0.0001668,
+   "elapsed_s": 1241.5,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 31,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98849,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03505,
+   "train/loss": 0.03074,
+   "lr/pg0": 0.0001409,
+   "lr/pg1": 0.0001409,
+   "lr/pg2": 0.0001409,
+   "elapsed_s": 1280.4,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 32,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.98917,
+   "metrics/accuracy_top5": 1.0,
+   "val/loss": 0.03366,
+   "train/loss": 0.03981,
+   "lr/pg0": 0.0001169,
+   "lr/pg1": 0.0001169,
+   "lr/pg2": 0.0001169,
+   "elapsed_s": 1317.6,
+   "gpu_mem_gb": 1.82
+  },
+  {
+   "epoch": 33,
+   "epochs": 40,
+   "metrics/accuracy_top1": 0.99323,
+   "metrics/accuracy_top5": 1.0,
+   "train/loss": 0.03981,
+   "lr/pg0": 0.0001169,
+   "lr/pg1": 0.0001169,
+   "lr/pg2": 0.0001169,
+   "elapsed_s": 1323.0,
+   "gpu_mem_gb": 1.98
+  }
+ ],
+ "final": {
+  "cfg": {
+   "model": "yolo26s-cls.pt",
+   "epochs": 40,
+   "patience": 10,
+   "imgsz": 224,
+   "batch": 64,
+   "optimizer": "auto",
+   "cos_lr": true,
+   "flipud": 0.5,
+   "seed": 0
+  },
+  "train_time_s": 1324.0,
+  "val": {
+   "split": "val",
+   "accuracy": 0.992552471225457,
+   "macro_precision": 0.9906988863038808,
+   "macro_recall": 0.994157373072014,
+   "macro_f1": 0.992400772900722,
+   "per_class": {
+    "basophil": {
+     "precision": 0.983739837398374,
+     "recall": 0.9918032786885246,
+     "f1": 0.9877551020408164,
+     "support": 122
+    },
+    "eosinophil": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "support": 312
+    },
+    "erythroblast": {
+     "precision": 0.9872611464968153,
+     "recall": 1.0,
+     "f1": 0.9935897435897436,
+     "support": 155
+    },
+    "immature_granulocytes": {
+     "precision": 0.993006993006993,
+     "recall": 0.9793103448275862,
+     "f1": 0.986111111111111,
+     "support": 290
+    },
+    "lymphocyte": {
+     "precision": 0.9838709677419355,
+     "recall": 1.0,
+     "f1": 0.991869918699187,
+     "support": 122
+    },
+    "monocyte": {
+     "precision": 0.9930555555555556,
+     "recall": 1.0,
+     "f1": 0.9965156794425087,
+     "support": 143
+    },
+    "neutrophil": {
+     "precision": 0.9939577039274925,
+     "recall": 0.987987987987988,
+     "f1": 0.9909638554216867,
+     "support": 333
+    }
+   },
+   "classes": [
+    "basophil",
+    "eosinophil",
+    "erythroblast",
+    "immature_granulocytes",
+    "lymphocyte",
+    "monocyte",
+    "neutrophil"
+   ]
+  },
+  "test": {
+   "split": "test",
+   "accuracy": 0.9884784818705523,
+   "macro_precision": 0.9891494164966544,
+   "macro_recall": 0.9886506532794642,
+   "macro_f1": 0.9888576683523252,
+   "per_class": {
+    "basophil": {
+     "precision": 0.9918367346938776,
+     "recall": 0.9959016393442623,
+     "f1": 0.9938650306748468,
+     "support": 244
+    },
+    "eosinophil": {
+     "precision": 0.9984,
+     "recall": 1.0,
+     "f1": 0.9991993594875901,
+     "support": 624
+    },
+    "erythroblast": {
+     "precision": 0.9967741935483871,
+     "recall": 0.9935691318327974,
+     "f1": 0.9951690821256038,
+     "support": 311
+    },
+    "immature_granulocytes": {
+     "precision": 0.9711375212224108,
+     "recall": 0.9879101899827288,
+     "f1": 0.9794520547945205,
+     "support": 579
+    },
+    "lymphocyte": {
+     "precision": 0.983739837398374,
+     "recall": 0.9958847736625515,
+     "f1": 0.9897750511247444,
+     "support": 243
+    },
+    "monocyte": {
+     "precision": 0.9927797833935018,
+     "recall": 0.9683098591549296,
+     "f1": 0.9803921568627452,
+     "support": 284
+    },
+    "neutrophil": {
+     "precision": 0.9893778452200304,
+     "recall": 0.978978978978979,
+     "f1": 0.9841509433962264,
+     "support": 666
+    }
+   },
+   "classes": [
+    "basophil",
+    "eosinophil",
+    "erythroblast",
+    "immature_granulocytes",
+    "lymphocyte",
+    "monocyte",
+    "neutrophil"
+   ]
+  }
+ },
+ "live_log_available": true
+}
